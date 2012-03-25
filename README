@@ -1,1 +1,5 @@
 This is a simple project to show a way to make requireJS + jsTestDriver + jasmine BDD work together, whether in node.js or in a browser
+
+Checkout the wiki pages to see how I came up with this result:
+
+https://github.com/podefr/jasmine-reqjs-jstd/wiki
