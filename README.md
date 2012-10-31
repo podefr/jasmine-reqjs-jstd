@@ -1,8 +1,9 @@
-This is a simple project that explains how to run Jasmine BDD specs over modules loaded with require.js, in three different environments:
+This is a simple project that explains how to run Jasmine BDD specs over modules loaded with require.js, in four different environments:
 
  * JsTestDriver
  * Node.js
  * Web browser
+ * Maven build
 
 
 Check out the wiki pages to see how I came up with this result:
@@ -41,4 +42,17 @@ open the tests.html page
 
 ```bash
 open tests.html
+```
+
+###Maven build
+
+simply execute: 
+```bash
+mvn clean test
+```
+The Maven build will automatically start whatever the default browser is, it will start the JsTestDriver server automatically, and then it will execute the tests.
+Optionally, you can choose which browser to be used during tests by using the following command:
+
+```bash
+mvn clean test -DbrowserPath=path/to/my/browser
 ```
